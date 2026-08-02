@@ -1,8 +1,24 @@
 aid: verkor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/verkor.png
 name: Verkor
-description: 'Verkor is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: energy-and-environmental. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Verkor is a French cleantech manufacturer founded in 2020 to fast-track low-carbon
+  lithium-ion battery production in Europe. Operating a "digital by design" industrial model, Verkor
+  produces high-performance battery cells and modules for electric mobility and stationary energy
+  storage, scaling through its Dunkerque Gigafactory toward 16 GWh of annual cell capacity to serve the
+  European market. Verkor is a physical-products/industrial company and does not publish a public
+  developer API, SDK, or API documentation; this profile captures its identity and public web surface
+  within the API Evangelist network. Backed by EQT Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/verkor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Energy And Environmental
+- Batteries
+- Energy Storage
+- Electric Mobility
+- Cleantech
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/verkor-domain-security.yml
 - type: Website
   url: https://verkor.com/en/
+- type: Support
+  url: https://verkor.com/en/contact/
+- type: Blog
+  url: https://verkor.com/en/news/
+- type: PrivacyPolicy
+  url: https://verkor.com/en/legal-notice-and-gdpr/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
